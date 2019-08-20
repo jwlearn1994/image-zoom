@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  #image-box {
+    display: inline-block;
+    margin-left: 100px;
+  }
+  #image-box img {
+    display: block;
+    width: 200px;
+  }
+  #result {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+  }
+  </style>
+  <script src="image-zoom.js"></script>
+</head>
+<body>
+  <div id="image-box">
+    <img src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"/>
+  </div>
+  <div id="result"></div>
+
+  <script>new ImageZoom('image-box');</script>
+</body>
+</html>
